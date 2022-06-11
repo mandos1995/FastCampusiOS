@@ -15,18 +15,25 @@ class SymbolRollerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(systemName: "cloud")
-        print("view did load...")
+        // TODO: 심볼에서, 하나를 임의로 추출해서 이미지와 텍스트 설정하기
+        reload()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view Will Appear...")
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("view Did Appear...")
     }
+    
+    func reload() {
+        let symbol = symbols.randomElement()!
+        imageView.image = UIImage(systemName: symbol)
+        label.text = symbol
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
-        print("와 눌렸다")
+        reload()
     }
 }
