@@ -11,14 +11,6 @@ class StockRankViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let stockList: [StockModel] = StockModel.list
-    
-    // Data, Presentation, Layout
-    // Data - 어떤 데이터?
-    // Presentation - 셀을 어떻게 표현?
-    // Layout - 셀을 어떻게 배치?
-    
-    // protocol -
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -46,7 +38,6 @@ extension StockRankViewController: UICollectionViewDataSource {
 
 extension StockRankViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // width == collectionView
         return CGSize(width: collectionView.bounds.width, height: 80)
     }
 }
