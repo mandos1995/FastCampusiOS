@@ -10,7 +10,7 @@ import UIKit
 class ChatListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let chatList: [Chat] = Chat.list
+    let chatList: [Chat] = Chat.list.sorted { $0.date > $1.date }
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
