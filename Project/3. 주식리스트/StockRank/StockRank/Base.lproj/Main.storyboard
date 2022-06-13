@@ -91,6 +91,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="127"/>
+                                        <connections>
+                                            <outlet property="companyIconImageView" destination="9BJ-t2-59L" id="mk8-Oi-ql6"/>
+                                            <outlet property="companyNameLabel" destination="Lnq-BA-wqG" id="WSG-dO-yB2"/>
+                                            <outlet property="companyPriceLabel" destination="u6c-kG-3iK" id="y1G-8r-czP"/>
+                                            <outlet property="diffLabel" destination="I6w-lP-qCj" id="2do-oN-63D"/>
+                                            <outlet property="rankLabel" destination="iTm-hu-qOm" id="Cgh-ty-scf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
