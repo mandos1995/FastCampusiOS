@@ -48,7 +48,7 @@
 
 ## 회고
 * CollectionView 사용법에 대해 복습할 수 있었음
-  * 배운점
+* 배운점
     * UICollectionView 에서 IndexPath.row로만 사용했었는데 IndexPath.item의 존재를 처음 알게됨
       * 기능적으로는 동일하지만 프로그래밍 스타일에 있어서 TableView에서는 row를 사용, CollectionView에서는 item을 사용하는것이 좋다.
     * UIColeectionView에서 리스트 및 그리드를 개발할 때 고려할 점 3가지
@@ -58,7 +58,7 @@
     * NumberFormatter를 다루는 법에 알게되었음
       * 컴마추가 방법
       * maximumFractionDigits 속성을 사용해 최대 소수점 자리수를 정할 수 있음 (default = 3)
-  * 아쉬운점
+* 아쉬운점
     * 하트모양을 이미지뷰로 사용했는데 버튼으로 사용해서 클릭시 빨간하트로 변하는 기능같은것도 구현하면 좋을것 같다고 느낌
 
 ## 사용기술
@@ -67,3 +67,32 @@
 
 ## 앱 시연 영상
 ![StockList](https://user-images.githubusercontent.com/77199797/173294999-d9c78da3-afd9-4af3-b1e6-1a27c2fd35ff.gif)
+
+# 4. 채팅리스트
+## 핵심기능
+1. UICollectionView를 사용해 채팅리스트를 UI로 보여줌
+
+## 회고
+* 주식리스트와 거의 비슷했지만 오토레이아웃이 약간 더 복잡했었다.
+* DateFormatter에 복습할 수 있었다.
+* 배운점
+  * intrinsic Content Size
+    * view 자체의 본질의 크기, 이 크기가 존재함으로 컴포넌트가 width와 height를 가질 수 있음
+    * intrinsic Content Size Width를 갖고있는 컴포넌트 - UISlider, UILabel, UIButton, UISwitch, UITextField
+    * intrinsic Content Size Height를 갖고있는 컴포넌트 - UISlider, UILabel, UIButton, UISwitch, UITextField
+    * ImageView와 TextView는 Content에 따라 변화함
+    * Content hugging
+      * 최대 크기에 제한 - 주어진 크기보다 작아질 수 있음
+    * Compression resistance
+      * 최소 크기에 제한 - 주어진 크기보다 커질 수 있음
+  * awakeFromNib()
+    * 객체가 초기화 된 후 호출됨
+    * UICollectionView에서 로드될때 호출됨
+  * 2021-04-01, 2022-04-05 와 같은 Date처럼 보이는 String도 날짜에 따라 정렬이 가능함
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![chatList](https://user-images.githubusercontent.com/77199797/173359134-1a289d6c-2336-4925-b08a-6a842e11cd13.gif)
