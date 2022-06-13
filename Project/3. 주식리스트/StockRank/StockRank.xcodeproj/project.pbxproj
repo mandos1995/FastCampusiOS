@@ -14,6 +14,7 @@
 		EEB42A4A2856FAFC0099BF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB42A482856FAFC0099BF1A /* LaunchScreen.storyboard */; };
 		EEB42A522856FB8A0099BF1A /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A512856FB8A0099BF1A /* StockModel.swift */; };
 		EEB42A542856FBB30099BF1A /* StockRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A532856FBB30099BF1A /* StockRankViewController.swift */; };
+		EEB42A56285705AD0099BF1A /* StockRankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A55285705AD0099BF1A /* StockRankCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EEB42A4B2856FAFC0099BF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB42A512856FB8A0099BF1A /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		EEB42A532856FBB30099BF1A /* StockRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewController.swift; sourceTree = "<group>"; };
+		EEB42A55285705AD0099BF1A /* StockRankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				EEB42A3D2856FAF90099BF1A /* AppDelegate.swift */,
 				EEB42A3F2856FAF90099BF1A /* SceneDelegate.swift */,
 				EEB42A532856FBB30099BF1A /* StockRankViewController.swift */,
+				EEB42A55285705AD0099BF1A /* StockRankCollectionViewCell.swift */,
 				EEB42A432856FAF90099BF1A /* Main.storyboard */,
 				EEB42A462856FAFC0099BF1A /* Assets.xcassets */,
 				EEB42A482856FAFC0099BF1A /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				EEB42A522856FB8A0099BF1A /* StockModel.swift in Sources */,
 				EEB42A3E2856FAF90099BF1A /* AppDelegate.swift in Sources */,
+				EEB42A56285705AD0099BF1A /* StockRankCollectionViewCell.swift in Sources */,
 				EEB42A402856FAF90099BF1A /* SceneDelegate.swift in Sources */,
 				EEB42A542856FBB30099BF1A /* StockRankViewController.swift in Sources */,
 			);
