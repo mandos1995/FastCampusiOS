@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		EEB42A3E2856FAF90099BF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A3D2856FAF90099BF1A /* AppDelegate.swift */; };
 		EEB42A402856FAF90099BF1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A3F2856FAF90099BF1A /* SceneDelegate.swift */; };
-		EEB42A422856FAF90099BF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A412856FAF90099BF1A /* ViewController.swift */; };
 		EEB42A452856FAF90099BF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB42A432856FAF90099BF1A /* Main.storyboard */; };
 		EEB42A472856FAFC0099BF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB42A462856FAFC0099BF1A /* Assets.xcassets */; };
 		EEB42A4A2856FAFC0099BF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB42A482856FAFC0099BF1A /* LaunchScreen.storyboard */; };
+		EEB42A522856FB8A0099BF1A /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A512856FB8A0099BF1A /* StockModel.swift */; };
+		EEB42A542856FBB30099BF1A /* StockRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB42A532856FBB30099BF1A /* StockRankViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEB42A3A2856FAF90099BF1A /* StockRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB42A3D2856FAF90099BF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEB42A3F2856FAF90099BF1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEB42A412856FAF90099BF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEB42A442856FAF90099BF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEB42A462856FAFC0099BF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEB42A492856FAFC0099BF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB42A4B2856FAFC0099BF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB42A512856FB8A0099BF1A /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		EEB42A532856FBB30099BF1A /* StockRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				EEB42A3D2856FAF90099BF1A /* AppDelegate.swift */,
 				EEB42A3F2856FAF90099BF1A /* SceneDelegate.swift */,
-				EEB42A412856FAF90099BF1A /* ViewController.swift */,
+				EEB42A532856FBB30099BF1A /* StockRankViewController.swift */,
 				EEB42A432856FAF90099BF1A /* Main.storyboard */,
 				EEB42A462856FAFC0099BF1A /* Assets.xcassets */,
 				EEB42A482856FAFC0099BF1A /* LaunchScreen.storyboard */,
 				EEB42A4B2856FAFC0099BF1A /* Info.plist */,
+				EEB42A512856FB8A0099BF1A /* StockModel.swift */,
 			);
 			path = StockRank;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB42A422856FAF90099BF1A /* ViewController.swift in Sources */,
+				EEB42A522856FB8A0099BF1A /* StockModel.swift in Sources */,
 				EEB42A3E2856FAF90099BF1A /* AppDelegate.swift in Sources */,
 				EEB42A402856FAF90099BF1A /* SceneDelegate.swift in Sources */,
+				EEB42A542856FBB30099BF1A /* StockRankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
