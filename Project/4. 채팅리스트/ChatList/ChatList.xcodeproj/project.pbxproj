@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		EE9CEE6028573B4800EFFED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE5F28573B4800EFFED9 /* AppDelegate.swift */; };
 		EE9CEE6228573B4800EFFED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE6128573B4800EFFED9 /* SceneDelegate.swift */; };
-		EE9CEE6428573B4800EFFED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE6328573B4800EFFED9 /* ViewController.swift */; };
 		EE9CEE6728573B4800EFFED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9CEE6528573B4800EFFED9 /* Main.storyboard */; };
 		EE9CEE6928573B4900EFFED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9CEE6828573B4900EFFED9 /* Assets.xcassets */; };
 		EE9CEE6C28573B4900EFFED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9CEE6A28573B4900EFFED9 /* LaunchScreen.storyboard */; };
+		EE9CEE7428573BA700EFFED9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE7328573BA700EFFED9 /* Chat.swift */; };
+		EE9CEE7628573C0900EFFED9 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE7528573C0900EFFED9 /* ChatListViewController.swift */; };
+		EE9CEE782857490300EFFED9 /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CEE772857490300EFFED9 /* ChatListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE9CEE5C28573B4800EFFED9 /* ChatList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9CEE5F28573B4800EFFED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9CEE6128573B4800EFFED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE9CEE6328573B4800EFFED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE9CEE6628573B4800EFFED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE9CEE6828573B4900EFFED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9CEE6B28573B4900EFFED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9CEE6D28573B4900EFFED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9CEE7328573BA700EFFED9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		EE9CEE7528573C0900EFFED9 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		EE9CEE772857490300EFFED9 /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 		EE9CEE5E28573B4800EFFED9 /* ChatList */ = {
 			isa = PBXGroup;
 			children = (
+				EE9CEE7328573BA700EFFED9 /* Chat.swift */,
 				EE9CEE5F28573B4800EFFED9 /* AppDelegate.swift */,
 				EE9CEE6128573B4800EFFED9 /* SceneDelegate.swift */,
-				EE9CEE6328573B4800EFFED9 /* ViewController.swift */,
 				EE9CEE6528573B4800EFFED9 /* Main.storyboard */,
+				EE9CEE7528573C0900EFFED9 /* ChatListViewController.swift */,
+				EE9CEE772857490300EFFED9 /* ChatListCollectionViewCell.swift */,
 				EE9CEE6828573B4900EFFED9 /* Assets.xcassets */,
 				EE9CEE6A28573B4900EFFED9 /* LaunchScreen.storyboard */,
 				EE9CEE6D28573B4900EFFED9 /* Info.plist */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9CEE6428573B4800EFFED9 /* ViewController.swift in Sources */,
+				EE9CEE782857490300EFFED9 /* ChatListCollectionViewCell.swift in Sources */,
 				EE9CEE6028573B4800EFFED9 /* AppDelegate.swift in Sources */,
+				EE9CEE7428573BA700EFFED9 /* Chat.swift in Sources */,
+				EE9CEE7628573C0900EFFED9 /* ChatListViewController.swift in Sources */,
 				EE9CEE6228573B4800EFFED9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
