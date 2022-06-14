@@ -96,3 +96,27 @@
 
 ## 앱 시연 영상
 ![chatList](https://user-images.githubusercontent.com/77199797/173359134-1a289d6c-2336-4925-b08a-6a842e11cd13.gif)
+
+# 5. 애플 프레임워크 리스트
+## 핵심기능
+1. UICollectionView를 사용해 애플 프레임 워크 리스트를 UI로 보여줌
+
+## 회고
+* 기존의 두 리스트는 리스트 형식이였지만 이번 프로젝트는 그리드 형식이였다.
+* 그리드 형식 셀 크기 조정방법에 대해 제대로 이해하였다.
+* 배운점
+  * Navigation Bar large title 설정 방법
+    * 스토리보드에서 Prefers Large Titles 체크
+    * 코드 작성시 navigationController?.navigationBar.prefersLargeTitles = true
+  * 코드로 스토리보드 인스펙터 창에 있는 프로퍼티에 접근하는 방법에 대해 알게되었음
+  * adjustsFontSizeToFitWidth에 대해 알게되었음
+    * true로 하게 되면 label이 크다면 label의 bounds에 맞추기위해 글자 크기를 자동으로 줄여줌
+* 아쉬운점
+  * 버튼같은거를 추가해서 2열, 3열, 4열, 5열 등 열을 수정할 수 있는 기능이 있었으면 더 좋을 것 같다.
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![appleFramework](https://user-images.githubusercontent.com/77199797/173482213-72f0fcb5-389b-49c5-aa14-3aa6574cf8ba.gif)
