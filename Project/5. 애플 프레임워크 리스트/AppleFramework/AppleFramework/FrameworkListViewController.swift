@@ -17,6 +17,8 @@ class FrameworkListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        navigationController?.navigationBar.topItem?.title = "☀️ Apple Frameworks"
+        
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowlayout.estimatedItemSize = .zero
         }
@@ -45,11 +47,25 @@ extension FrameworkListViewController: UICollectionViewDataSource {
 
 extension FrameworkListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // 3열 일때
         let interItemSpacing: CGFloat = 10
         let padding: CGFloat = 16
         let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
         let height = width * 1.5
         return CGSize(width: width, height: height)
+        
+        // 2열
+//        let interItemSpacing: CGFloat = 10
+//        let padding: CGFloat = 16
+//        let width = (collectionView.bounds.width - interItemSpacing - padding * 2) / 2
+//        let height = width * 1.5
+//        return CGSize(width: width, height: height)
+        // 4열
+//        let interItemSpacing: CGFloat = 10
+//        let padding: CGFloat = 16
+//        let width = (collectionView.bounds.width - interItemSpacing * 3 - padding * 2) / 4
+//        let height = width * 1.5
+//        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
