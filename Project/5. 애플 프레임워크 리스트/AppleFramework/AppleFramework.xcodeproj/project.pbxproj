@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		EE203EA728581AC400E7C24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EA628581AC400E7C24A /* AppDelegate.swift */; };
 		EE203EA928581AC400E7C24A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EA828581AC400E7C24A /* SceneDelegate.swift */; };
-		EE203EAB28581AC400E7C24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EAA28581AC400E7C24A /* ViewController.swift */; };
 		EE203EAE28581AC400E7C24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE203EAC28581AC400E7C24A /* Main.storyboard */; };
 		EE203EB028581AC600E7C24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE203EAF28581AC600E7C24A /* Assets.xcassets */; };
 		EE203EB328581AC600E7C24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE203EB128581AC600E7C24A /* LaunchScreen.storyboard */; };
+		EE203EBB28581B2100E7C24A /* FrameworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBA28581B2100E7C24A /* FrameworkData.swift */; };
+		EE203EBD28581B7000E7C24A /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */; };
+		EE203EBF28581D8100E7C24A /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBE28581D8100E7C24A /* FrameworkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE203EA328581AC400E7C24A /* AppleFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE203EA628581AC400E7C24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE203EA828581AC400E7C24A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE203EAA28581AC400E7C24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE203EAD28581AC400E7C24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE203EAF28581AC600E7C24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE203EB228581AC600E7C24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE203EB428581AC600E7C24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE203EBA28581B2100E7C24A /* FrameworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkData.swift; sourceTree = "<group>"; };
+		EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController.swift; sourceTree = "<group>"; };
+		EE203EBE28581D8100E7C24A /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		EE203EA528581AC400E7C24A /* AppleFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */,
+				EE203EBA28581B2100E7C24A /* FrameworkData.swift */,
 				EE203EA628581AC400E7C24A /* AppDelegate.swift */,
 				EE203EA828581AC400E7C24A /* SceneDelegate.swift */,
-				EE203EAA28581AC400E7C24A /* ViewController.swift */,
+				EE203EBE28581D8100E7C24A /* FrameworkCell.swift */,
 				EE203EAC28581AC400E7C24A /* Main.storyboard */,
 				EE203EAF28581AC600E7C24A /* Assets.xcassets */,
 				EE203EB128581AC600E7C24A /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE203EAB28581AC400E7C24A /* ViewController.swift in Sources */,
 				EE203EA728581AC400E7C24A /* AppDelegate.swift in Sources */,
+				EE203EBB28581B2100E7C24A /* FrameworkData.swift in Sources */,
 				EE203EA928581AC400E7C24A /* SceneDelegate.swift in Sources */,
+				EE203EBF28581D8100E7C24A /* FrameworkCell.swift in Sources */,
+				EE203EBD28581B7000E7C24A /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
