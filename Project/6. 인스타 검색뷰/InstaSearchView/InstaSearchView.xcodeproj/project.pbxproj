@@ -14,6 +14,8 @@
 		EE203EDA2858807B00E7C24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE203ED82858807B00E7C24A /* LaunchScreen.storyboard */; };
 		EE203EE22858812E00E7C24A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EE12858812E00E7C24A /* SearchViewController.swift */; };
 		EE203EE42858820400E7C24A /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EE32858820400E7C24A /* ResultCell.swift */; };
+		EEA777552858DA45005FC13A /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA777542858DA45005FC13A /* NewsFeedViewController.swift */; };
+		EEA777572858DA7E005FC13A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA777562858DA7E005FC13A /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EE203EDB2858807B00E7C24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE203EE12858812E00E7C24A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EE203EE32858820400E7C24A /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		EEA777542858DA45005FC13A /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		EEA777562858DA7E005FC13A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 				EE203ECD2858807800E7C24A /* AppDelegate.swift */,
 				EE203ECF2858807800E7C24A /* SceneDelegate.swift */,
 				EE203ED32858807800E7C24A /* Main.storyboard */,
+				EEA777542858DA45005FC13A /* NewsFeedViewController.swift */,
 				EE203EE12858812E00E7C24A /* SearchViewController.swift */,
 				EE203EE32858820400E7C24A /* ResultCell.swift */,
+				EEA777562858DA7E005FC13A /* FeedCell.swift */,
 				EE203ED62858807B00E7C24A /* Assets.xcassets */,
 				EE203ED82858807B00E7C24A /* LaunchScreen.storyboard */,
 				EE203EDB2858807B00E7C24A /* Info.plist */,
@@ -145,6 +151,8 @@
 				EE203ECE2858807800E7C24A /* AppDelegate.swift in Sources */,
 				EE203EE42858820400E7C24A /* ResultCell.swift in Sources */,
 				EE203ED02858807800E7C24A /* SceneDelegate.swift in Sources */,
+				EEA777552858DA45005FC13A /* NewsFeedViewController.swift in Sources */,
+				EEA777572858DA7E005FC13A /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
