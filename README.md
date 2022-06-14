@@ -120,3 +120,27 @@
 
 ## 앱 시연 영상
 ![appleFramework](https://user-images.githubusercontent.com/77199797/173482213-72f0fcb5-389b-49c5-aa14-3aa6574cf8ba.gif)
+
+# 6. 인스타 검색뷰
+## 핵심기능
+1. TabBar + CollectionView를 사용해 인스타 검색뷰를 보여줌
+
+## 회고
+* TabBar 사용법을 복습할 수 있었음
+* 코드로는 TabBar를 작성해본 경험이 없었는데, 코드로도 작성을 한번 해봐야겠다고 생각이 듬
+* 배운점
+  * prepareForReuse
+    * 재사용되는 셀이 재사용 될 수 있도록 준비를 할 수 있는 메서드
+    * 잠재적인 이슈를 피하기 위해 사용함, 셀의 content와 관련없는 것들만 초기화 해주는 것이 좋다.(뷰 관련)
+  * DarkMode 관련 labelColor로 지정해주는 방법
+    * DarkMode일 때 Label의 색깔을 White color로 지정해줬다면, 다크모드가 아닐 시에도 White color가 되기 때문에, label color라는 UIColor로 지정해주면 다크모드가 아닐 시에 default color로 나타낼 수 있음
+  * UISearchViewController의 존재를 알게되었고, Navigation Item 항목에 넣을 수도 있다는 것을 알게됨
+* 아쉬운점
+  * 검색을 해서 항목들을 필터링하는 기능이 있으면 좋을 것 같음
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![instaSearch](https://user-images.githubusercontent.com/77199797/173625821-5f1b9ba7-974c-4d91-8fad-35b25b7c1355.gif)
