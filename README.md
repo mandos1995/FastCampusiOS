@@ -144,3 +144,38 @@
 
 ## 앱 시연 영상
 ![instaSearch](https://user-images.githubusercontent.com/77199797/173625821-5f1b9ba7-974c-4d91-8fad-35b25b7c1355.gif)
+
+# 7. NRC 온보딩
+## 핵심기능
+1. CollectionView + PageControl을 사용해 온보딩 뷰를 보여줌
+  
+## 회고
+* PageControl의 사용법에 대해 복습할 수 있었음
+* 배운점
+  * PageControl 사용법
+  * UIScrollViewDelegate 관련 함수
+    * scrollViewDidScroll
+      * 스크롤을 할 때마다 호출됨 (contentOffset 값이 바뀔 때 마다 호출)
+    * scrollViewWillBeginDragging()
+      * 스크롤 뷰에서 드래그 하기 시작할 때 한번 호출
+    * scrollViewWillEndDragging()
+      * 손을 뗐을 때 한번 호출
+      * targetContentOffset을 변경하여 스크롤 뷰가 중지되는 위치를 조정할 수 있음
+    * scrollViewDidEndDragging()
+      * 스크롤 뷰에서 드래그가 끝났을 때 한번만 호출
+    * scrollViewShouldScrollToTop()
+      * 상단 클릭시 최상단으로 올라가는것을 허용하는지 여부 (default: true)
+    * scrollViewDidScrollToTop()
+      * 뷰가 최상단으로 올라가는 이벤트가 발생할 때 호출되는 함수
+    * scrollViewWillBeginDecelerating()
+      * 손을 뗀 이후로 감속이 시작됐을 때 호출되는 함수
+      * 위 코드에서는 pageControl을 사용할 때 위 함수를 사용했음
+* 아쉬운점
+  * 아쉬운점 까지는 아니고 pageControl을 사용하지 않고도 배너뷰 같은 경우 (1 / 3) (2 / 3) .. 등을 표현할 때 UIScrollViewDelegate 관련 함수를 사용해서 구현할 수 있겠다고 생각이 들었다.
+
+## 사용 기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![NRC onboarding](https://user-images.githubusercontent.com/77199797/174236292-0dfe1f75-79a5-4d6b-89d6-b94927053fb2.gif)
