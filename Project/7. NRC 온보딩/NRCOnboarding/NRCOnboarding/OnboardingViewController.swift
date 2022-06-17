@@ -9,6 +9,7 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let messages: [OnboardingMessage] = OnboardingMessage.messages
     override func viewDidLoad() {
@@ -16,6 +17,11 @@ class OnboardingViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.estimatedItemSize = .zero
+        }
+        
+        pageControl.numberOfPages = messages.count
     }
 }
 
@@ -33,8 +39,6 @@ extension OnboardingViewController: UICollectionViewDataSource {
         cell.configure(message)
         return cell
     }
-    
-    
 }
 
 extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
@@ -48,5 +52,13 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return .zero
+    }
+}
+
+extension OnboardingViewController: UIScrollViewDelegate {    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let index = Int(scrollView.contentOffset.x / self.collectionView.bounds.width)
+        
+        pageControl.currentPage = index
     }
 }

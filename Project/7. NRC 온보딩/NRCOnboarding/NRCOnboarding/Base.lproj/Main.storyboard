@@ -124,6 +124,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="NFA-Wg-pGG" id="SHt-pD-urD"/>
+                        <outlet property="pageControl" destination="pRY-Ed-oKi" id="CNQ-iN-5Fn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
