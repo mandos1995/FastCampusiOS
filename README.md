@@ -217,3 +217,24 @@
 
 ## 앱 시연 영상
 ![appleFramework(refactoring)](https://user-images.githubusercontent.com/77199797/177065624-246aa008-41d2-4f0b-a73b-9df290b9ba78.gif)
+
+# 9. 집중을 위한 명상 컨텐츠 리스트 
+## 핵심기능
+1. UICollectionViewDiffDataSource
+2. UICollectionViewCompositionalLayout
+3. SnapShot
+
+## 회고
+* UICollectionViewDiffDataSource 사용법에 조금 더 익숙해짐
+* UICollectionViewCompositionalLayout 사용법에 조금 더 익숙해짐
+* SnapShot 사용법에 조금 더 익숙해짐
+* 배운점
+  * UICollectionViewCompositionalLayout을 사용하면서 padding값 조절 및 interGroupSpacing을 더 잘 사용할 수 있었음
+  *  NSCollectionLayoutSize에서 estimated를 사용하면 동적인 cell의 높이를 줄 수 있음
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![HeadSpaceFocus](https://user-images.githubusercontent.com/77199797/177075818-53498a5f-a750-4d44-9b5c-78c10e7272cc.gif)
