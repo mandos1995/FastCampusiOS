@@ -69,6 +69,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="137"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="W5B-AO-imS" id="Auo-st-qex"/>
+                                            <outlet property="thumnailImageView" destination="ZJX-IG-S2j" id="asm-hu-vbQ"/>
+                                            <outlet property="titleLabel" destination="ypq-dP-xOX" id="Xa7-Qs-p7c"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
