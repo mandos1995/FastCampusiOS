@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		EEEA35E1287284CD00F688D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35E0287284CD00F688D2 /* AppDelegate.swift */; };
 		EEEA35E3287284CD00F688D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35E2287284CD00F688D2 /* SceneDelegate.swift */; };
-		EEEA35E5287284CD00F688D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35E4287284CD00F688D2 /* ViewController.swift */; };
 		EEEA35E8287284CD00F688D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35E6287284CD00F688D2 /* Main.storyboard */; };
 		EEEA35EA287284D200F688D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35E9287284D200F688D2 /* Assets.xcassets */; };
 		EEEA35ED287284D200F688D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEA35EB287284D200F688D2 /* LaunchScreen.storyboard */; };
 		EEEA35F72872853D00F688D2 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35F62872853D00F688D2 /* Focus.swift */; };
+		EEEA35F9287285C500F688D2 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35F8287285C500F688D2 /* FocusViewController.swift */; };
+		EEEA35FB287288A700F688D2 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA35FA287288A700F688D2 /* FocusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEEA35DD287284CD00F688D2 /* HeadSpaceForcus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadSpaceForcus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA35E0287284CD00F688D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEEA35E2287284CD00F688D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEEA35E4287284CD00F688D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEEA35E7287284CD00F688D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEEA35E9287284D200F688D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEEA35EC287284D200F688D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEEA35EE287284D200F688D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEEA35F62872853D00F688D2 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		EEEA35F8287285C500F688D2 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		EEEA35FA287288A700F688D2 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 			children = (
 				EEEA35E0287284CD00F688D2 /* AppDelegate.swift */,
 				EEEA35E2287284CD00F688D2 /* SceneDelegate.swift */,
-				EEEA35E4287284CD00F688D2 /* ViewController.swift */,
 				EEEA35E6287284CD00F688D2 /* Main.storyboard */,
+				EEEA35F8287285C500F688D2 /* FocusViewController.swift */,
+				EEEA35FA287288A700F688D2 /* FocusCell.swift */,
 				EEEA35E9287284D200F688D2 /* Assets.xcassets */,
 				EEEA35EB287284D200F688D2 /* LaunchScreen.storyboard */,
 				EEEA35EE287284D200F688D2 /* Info.plist */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEEA35E5287284CD00F688D2 /* ViewController.swift in Sources */,
 				EEEA35E1287284CD00F688D2 /* AppDelegate.swift in Sources */,
 				EEEA35F72872853D00F688D2 /* Focus.swift in Sources */,
+				EEEA35FB287288A700F688D2 /* FocusCell.swift in Sources */,
 				EEEA35E3287284CD00F688D2 /* SceneDelegate.swift in Sources */,
+				EEEA35F9287285C500F688D2 /* FocusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
