@@ -179,3 +179,41 @@
 
 ## 앱 시연 영상
 ![NRC onboarding](https://user-images.githubusercontent.com/77199797/174236292-0dfe1f75-79a5-4d6b-89d6-b94927053fb2.gif)
+
+# 8. 애플 프레임워크 리스트 (개선)
+## 핵심기능
+1. UICollectionViewDataSource -> UICollectionViewDiffDataSource 리팩토링
+2. UICollectionViewFloyLayout -> UICollectionViewCompositionalLayout 리팩토링 
+
+## 회고
+* UICollectionViewDiffDataSource에 대해 처음 알게되었음
+* UICollectionViewCompositionalLayout에 대해 처음 알게되었음
+* SnapShot에 대해 처음 알게되었음
+* 배운점
+  * UICollectionViewDiffDataSource에
+    * 기존의 DataSource와 UI는 각각 시간에 따라 변경되는 자신만의 버전을 가지고 있는데, 이것이 맞지 않다면 에러를 발생시켰다. reloadData를 수행하면 해결이 가능하지만 애니메이션이 없이 화면을 갱신하기 때문에 UX적으로 안좋기 때문에 Diff DataSource가 등장함
+    * Diff DataSource는 Generic Class이며, Generic에 해당하는 타입은 모두 Hashable을 준수하는 타입이여함
+  * SnapShot
+    * SnapShot은 UI의 버전을 저장하는 개념, 각 section의 item에 대한 유니크한 identifier를 저장하고 이를 기반으로 업데이트를 수행함
+  * UICollectionViewCompositionalLayout
+    * NSCollectionLayoutSize
+      * 셀의 크기를 결정해주는 요소
+      * absolute - 고정 크기
+      * fractionalHeight - 포함된 그룹안의 세로비율만큼의 크기 (max 1)
+      * fractionalWidth - 포함된 그룹안의 가로비율만큼의 크기 (max 1)
+      * estimated - 최소크기
+    * NSCollectionLayoutItem
+      * 아이템을 나타냄, 위의 만든 사이즈를 적용시킨 Cell
+    * NSCollectinoLayoutGroup
+      * 수직, 수평을 기준으로 만들 수 있고, 사이즈 및 item, 그룹내의 셀 갯수를 정의함
+    * NSCollectionLayoutSection
+      * 만들어준 그룹을 section에 추가함
+    * UICollectionviewCompostionalLayout
+      * 만든 섹션을 넣어주고 레이아웃을 만듬, 마지막에 collectionView에 만든 레이아웃을 적용
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![appleFramework(refactoring)](https://user-images.githubusercontent.com/77199797/177065624-246aa008-41d2-4f0b-a73b-9df290b9ba78.gif)
