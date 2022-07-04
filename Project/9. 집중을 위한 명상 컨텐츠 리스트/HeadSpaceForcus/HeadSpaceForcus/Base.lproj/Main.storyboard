@@ -77,18 +77,37 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEo-Db-RNP">
+                                <rect key="frame" x="50" y="802" width="314" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ETV-7u-zlD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="See All">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcZ-Px-9eW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zhs-NP-6zf" secondAttribute="trailing" id="FUm-5H-6u4"/>
                             <constraint firstAttribute="bottom" secondItem="Zhs-NP-6zf" secondAttribute="bottom" id="HOH-vW-q7a"/>
+                            <constraint firstItem="WEo-Db-RNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bdl-cx-Jdf"/>
                             <constraint firstItem="Zhs-NP-6zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dcD-nT-yoI"/>
+                            <constraint firstItem="WEo-Db-RNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="oQa-el-WGn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WEo-Db-RNP" secondAttribute="bottom" id="q1b-ux-Stq"/>
                             <constraint firstItem="Zhs-NP-6zf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sm1-nD-Bhk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Zhs-NP-6zf" id="nzg-wx-r3c"/>
+                        <outlet property="refreshButton" destination="WEo-Db-RNP" id="7cA-uG-TLS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,8 +117,14 @@
     </scenes>
     <resources>
         <image name="cloud.heavyrain.fill" catalog="system" width="125" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
