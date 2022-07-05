@@ -238,3 +238,39 @@
 
 ## 앱 시연 영상
 ![HeadSpaceFocus](https://user-images.githubusercontent.com/77199797/177075818-53498a5f-a750-4d44-9b5c-78c10e7272cc.gif)
+
+# 10. 스포티파이 구매뷰
+## 핵심 기능
+1. UICollectionViewDiffDataSource
+2. UICollectionViewCompositionalLayout
+3. SnapShot
+4. NSCollectionLayoutEnvironment
+5. orthogonalScrollingBehavior
+
+## 회고
+* UICollectionViewDiffDataSource 사용법에 조금 더 익숙해짐
+* UICollectionViewCompositionalLayout 사용법에 조금 더 익숙해짐
+* SnapShot 사용법에 조금 더 익숙해짐
+* NSCollectionLayoutEnvironment에 대해 알게되었음
+* orthogonalScrollingBehavior에 대해 알게되었음
+* 배운점
+  * orthogonalScrollingBehavior (수평 스크롤)
+    * none
+      * 수평으로 스크롤하는것을 허용하지 않음
+    * continuous
+      * 수평으로 스크롤하는 설정
+    * continuousGroupLeadingBoundary
+      * 수평으로 스콜할 수 있으며 그룹의 경계에서 자연스럽게 멈출 수 있음
+    * paging
+      * 수평으로 페이징할 수 있음
+    * groupPaging
+      * 한 그룹씩 수평으로 페이징할 수 있음
+    * groupPagingCentered
+      * 한 그룹씩 수평으로 페이징하여 각 그룹을 중앙에 배치할 수 있음
+  
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![SpotifyPaywall](https://user-images.githubusercontent.com/77199797/177284051-5df51524-2cd5-4c21-9fab-5d1f819c7fe2.gif)
