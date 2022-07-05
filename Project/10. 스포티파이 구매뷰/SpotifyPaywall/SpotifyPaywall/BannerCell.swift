@@ -13,6 +13,11 @@ class BannerCell: UICollectionViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.layer.cornerRadius = 10
+    }
+    
     func configure(_ info: BannerInfo) {
         titleLabel.text = info.title
         descriptionLabel.text = info.description
