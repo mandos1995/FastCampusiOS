@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Focus View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FocusViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FocusViewController" customModule="HeadSpaceForcus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zhs-NP-6zf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ptu-HJ-qGl">
+                                    <size key="itemSize" width="414" height="137"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FocusCell" id="IWk-jQ-aKn" customClass="FocusCell" customModule="HeadSpaceForcus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ELU-RG-NtH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ouick Forcus Results" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypq-dP-xOX">
+                                                    <rect key="frame" x="20" y="30" width="163" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZJX-IG-S2j">
+                                                    <rect key="frame" x="264" y="0.0" width="150" height="138.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="ldP-ge-Nvg"/>
+                                                    </constraints>
+                                                    <imageReference key="image" image="cloud.heavyrain.fill" catalog="system" renderingMode="original"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Find and keep focus with music from world-renowned artists. Get in the zone with techno trailblazer Monika Kruse." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5B-AO-imS">
+                                                    <rect key="frame" x="20" y="42" width="214" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZJX-IG-S2j" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="W5B-AO-imS" secondAttribute="trailing" constant="30" id="09L-p6-xxn"/>
+                                                <constraint firstItem="ZJX-IG-S2j" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ypq-dP-xOX" secondAttribute="trailing" constant="30" id="DGQ-QY-o3z"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZJX-IG-S2j" secondAttribute="trailing" id="DYu-4r-jrj"/>
+                                                <constraint firstItem="W5B-AO-imS" firstAttribute="top" secondItem="ypq-dP-xOX" secondAttribute="bottom" constant="12" id="PXs-yD-3M8"/>
+                                                <constraint firstItem="W5B-AO-imS" firstAttribute="leading" secondItem="ELU-RG-NtH" secondAttribute="leading" constant="20" id="bcI-Yc-tGD"/>
+                                                <constraint firstItem="ypq-dP-xOX" firstAttribute="top" secondItem="ELU-RG-NtH" secondAttribute="top" constant="30" id="nyT-3J-4KU"/>
+                                                <constraint firstItem="ZJX-IG-S2j" firstAttribute="top" secondItem="ELU-RG-NtH" secondAttribute="top" id="pyy-sP-LAl"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="W5B-AO-imS" secondAttribute="bottom" constant="30" id="wGA-9S-n3c"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZJX-IG-S2j" secondAttribute="bottom" id="yoI-li-yaI"/>
+                                                <constraint firstItem="ypq-dP-xOX" firstAttribute="leading" secondItem="ELU-RG-NtH" secondAttribute="leading" constant="20" id="z7j-r7-TNV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="137"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="W5B-AO-imS" id="Auo-st-qex"/>
+                                            <outlet property="thumnailImageView" destination="ZJX-IG-S2j" id="asm-hu-vbQ"/>
+                                            <outlet property="titleLabel" destination="ypq-dP-xOX" id="Xa7-Qs-p7c"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEo-Db-RNP">
+                                <rect key="frame" x="50" y="802" width="314" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ETV-7u-zlD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="See All">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcZ-Px-9eW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zhs-NP-6zf" secondAttribute="trailing" id="FUm-5H-6u4"/>
+                            <constraint firstAttribute="bottom" secondItem="Zhs-NP-6zf" secondAttribute="bottom" id="HOH-vW-q7a"/>
+                            <constraint firstItem="WEo-Db-RNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bdl-cx-Jdf"/>
+                            <constraint firstItem="Zhs-NP-6zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dcD-nT-yoI"/>
+                            <constraint firstItem="WEo-Db-RNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="oQa-el-WGn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WEo-Db-RNP" secondAttribute="bottom" id="q1b-ux-Stq"/>
+                            <constraint firstItem="Zhs-NP-6zf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sm1-nD-Bhk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Zhs-NP-6zf" id="nzg-wx-r3c"/>
+                        <outlet property="refreshButton" destination="WEo-Db-RNP" id="7cA-uG-TLS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.heavyrain.fill" catalog="system" width="125" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
