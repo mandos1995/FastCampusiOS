@@ -274,3 +274,37 @@
 
 ## 앱 시연 영상
 ![SpotifyPaywall](https://user-images.githubusercontent.com/77199797/177284051-5df51524-2cd5-4c21-9fab-5d1f819c7fe2.gif)
+
+# 11. 애플 프레임워크 리스트 (모달)
+## 핵심기능
+1. 상세뷰 modal 진입하기
+2. Safari modal 진입하기
+
+## 회고
+* iOS에서 제공해주는 시스템 모달에 대해 알게되었음
+  * alert
+    * https://developer.apple.com/design/human-interface-guidelines/components/presentation/alerts/
+  * activity views
+    * https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/activity-views/
+  * share sheets
+    * https://developer.apple.com/design/human-interface-guidelines/components/presentation/sheets
+  * action sheet 
+    * https://developer.apple.com/design/human-interface-guidelines/components/presentation/action-sheets/
+* modal presentationStyle에 대해 복습할 수 있었음
+  * automatic
+    * default 값이며 대부분 page sheet 형태로 모달을 띄움
+  * fullscreen
+    * 화면을 꽉 채워서 모달을 띄움
+  * popover
+* SFSafariViewController에 대해 알게되었음
+* 배운점
+  * SFSafariViewController, WKWebView의 차이
+    * WKWebView는 웹 콘텐츠를 수정하거나 조작해야하는 경우 가장 높은 유연성을 제공
+    * SFSafariViewController는 Safari 앱을 여는 것과 같은 효과를 낼 수 있다. (공유 버튼, 앞으로가기, 뒤로가기 등)
+
+## 사용기술
+* Swift
+* StoryBoard
+
+## 앱 시연 영상
+![AppleFrameworkList(modal)](https://user-images.githubusercontent.com/77199797/177510568-c2657639-176d-493d-9e38-39edbcf1f3ce.gif)
