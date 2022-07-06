@@ -15,6 +15,8 @@
 		EE203EBB28581B2100E7C24A /* FrameworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBA28581B2100E7C24A /* FrameworkData.swift */; };
 		EE203EBD28581B7000E7C24A /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */; };
 		EE203EBF28581D8100E7C24A /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EBE28581D8100E7C24A /* FrameworkCell.swift */; };
+		EE29F8DF2875798E000A1DF1 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE29F8DE2875798E000A1DF1 /* Detail.storyboard */; };
+		EE29F8E1287579A3000A1DF1 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29F8E0287579A3000A1DF1 /* FrameworkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EE203EBA28581B2100E7C24A /* FrameworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkData.swift; sourceTree = "<group>"; };
 		EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController.swift; sourceTree = "<group>"; };
 		EE203EBE28581D8100E7C24A /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
+		EE29F8DE2875798E000A1DF1 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		EE29F8E0287579A3000A1DF1 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,11 @@
 				EE203EA828581AC400E7C24A /* SceneDelegate.swift */,
 				EE203EBE28581D8100E7C24A /* FrameworkCell.swift */,
 				EE203EAC28581AC400E7C24A /* Main.storyboard */,
+				EE29F8DE2875798E000A1DF1 /* Detail.storyboard */,
 				EE203EAF28581AC600E7C24A /* Assets.xcassets */,
 				EE203EB128581AC600E7C24A /* LaunchScreen.storyboard */,
 				EE203EB428581AC600E7C24A /* Info.plist */,
+				EE29F8E0287579A3000A1DF1 /* FrameworkDetailViewController.swift */,
 			);
 			path = AppleFramework;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				EE203EB328581AC600E7C24A /* LaunchScreen.storyboard in Resources */,
 				EE203EB028581AC600E7C24A /* Assets.xcassets in Resources */,
 				EE203EAE28581AC400E7C24A /* Main.storyboard in Resources */,
+				EE29F8DF2875798E000A1DF1 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,7 @@
 				EE203EBB28581B2100E7C24A /* FrameworkData.swift in Sources */,
 				EE203EA928581AC400E7C24A /* SceneDelegate.swift in Sources */,
 				EE203EBF28581D8100E7C24A /* FrameworkCell.swift in Sources */,
+				EE29F8E1287579A3000A1DF1 /* FrameworkDetailViewController.swift in Sources */,
 				EE203EBD28581B7000E7C24A /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

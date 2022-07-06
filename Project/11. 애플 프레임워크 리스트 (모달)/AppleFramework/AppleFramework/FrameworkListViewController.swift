@@ -40,6 +40,8 @@ class FrameworkListViewController: UIViewController {
         // Layout
         collectionView.collectionViewLayout = layout()
         
+        collectionView.delegate = self
+        
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -61,4 +63,14 @@ class FrameworkListViewController: UIViewController {
         return UICollectionViewCompositionalLayout(section: section)
     }
 
+}
+extension FrameworkListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let framework = list[indexPath.item]
+        print(">>> selected: \(framework.name)")
+        
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
+        present(vc, animated: true, completion: nil)
+    }
 }
