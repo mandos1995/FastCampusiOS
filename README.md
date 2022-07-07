@@ -308,3 +308,21 @@
 
 ## 앱 시연 영상
 ![AppleFrameworkList(modal)](https://user-images.githubusercontent.com/77199797/177510568-c2657639-176d-493d-9e38-39edbcf1f3ce.gif)
+
+# 12. 집중을 위한 명상 콘텐츠 리스트 (네비게이션)
+## 핵심기능
+1. 네비게이션으로 화면전환
+2. HeaderView 적용
+3. Section이 2개 이상인 CollectionView 적용
+
+## 회고
+1. CaseIterable에 대해 알게되었음
+2. 헤더뷰를 적용하는 방법에 대해 알게되었음
+3. Section이 2개 이상일 때 UICollectionViewDiffDataSource, UICollectionViewCompositionalLayout, SnapShot을 사용하여 CollectionView를 구현하는 방법에 대해 알게되었음
+
+## 사용기술
+* Swift
+* Storyboard
+
+## 앱 시연 영상
+![HeadSpaceFocus(Navigation)](https://user-images.githubusercontent.com/77199797/177693983-8beed926-f909-40ce-bbb8-a61c41819652.gif)
