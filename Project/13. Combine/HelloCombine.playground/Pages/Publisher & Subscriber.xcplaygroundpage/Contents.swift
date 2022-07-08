@@ -36,3 +36,4 @@ let subscription3 = arrayPublisher.assign(to: \.property, on: object)
 
 print("Final Value: \(object.property)")
 // Final Value: 9
+
