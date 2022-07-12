@@ -433,3 +433,27 @@ print("text: \(label.text)")
   * Operator, Subscriber가 어느 스레드에서 수행할 지 결정해주는 것
   * UI 업데이트 필요한 데이터를 메인스레드에서 받을 수 있게 도와줌
     * ex) 서버에서 가져온 데이터를 UI 업데이트 할 때
+
+# 14. 애플 프레임워크 리스트 (Combine)
+## 핵심기능
+1. 기존의 애플 프레임워크 리스트 (모달)을 Combine으로 리팩토링
+
+## 회고
+* Combine 없이 기존의 방법으로도 비동기 프로그래밍을 적용할 수 있지만 Combine을 쓰면 보다 깔끔하고 직관적이게 처리할 수 있음
+* Combine을 직접 적용하는 방법에 대해 알게되었음
+* [weak self], [unowned self]에 대해 알게되었음
+* 배운점
+  * ARC
+    * Swift의 메모리 관리는 ARC에 의해 처리되는데, 더 이상 필요하지 않은 클래스의 인스턴스에 사용되는 메모리를 해제하기 위해 사용됨
+    * property에 부모 뷰 컨트롤러에 대한 참조를 저장하는 자식 뷰 컨트롤러가 있는 경우 순환 참조를 방지하기 위해 속성을 weak 또는 unowned 키워드로 표시해야함
+  * [unowned self]
+    * unowned는 순환참조를 피할 수 있게 하는 과정에서 self를 옵셔널 강제 언래핑하고, 할당이 해제된 후에도 내용에 접근하려고 하기 때문에 안전하지 않은 방법
+  * [weak self]
+    *  weak는 순환참조를 피할 수 있게 하는 과정에서 self를 옵셔널로 만듬
+    * unowned 보다 보다 안전한 방법
+    * 옵셔널 체이닝 self?. 를 사용할 수도 있지만 guard let 구문인 guard self = self else { return } 구문을 많이 사용함
+
+## 사용기술
+* Swift
+* Storyboard
+* Combine
