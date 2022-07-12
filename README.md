@@ -326,3 +326,110 @@
 
 ## 앱 시연 영상
 ![HeadSpaceFocus(Navigation)](https://user-images.githubusercontent.com/77199797/177693983-8beed926-f909-40ce-bbb8-a61c41819652.gif)
+
+# 13. Combine
+
+## 3가지 주요 컴포넌트
+* Publisher
+  * 생산자, 배출자, 크리에이터, 배설자 
+* Subscriber
+  * 소비자, 구독자, 받는사람
+* Operator
+  * 가공하는사람, 변경시키는 사람, 편집자
+
+## Publisher
+* 데이터를 배출함
+  * 구체적인 output 및 실패 타입을 정의
+  * Subscriber가 요청한 것 만큼의 데이터를 제공
+* 빌트인 Publisher인 **Just**, **Future**
+  * Just 는 값을 다룸
+  * Future는 Function을 다룸
+* iOS에서 자동으로 제공해주는 Publisher
+  * Notification Center
+  * Timer
+  * URLSession.dataTask
+
+### Subject
+* **send(_:)** 메서드를 이용해 이벤트 값을 주입시킬 수 있는 퍼블리셔
+* 기존의 비동기처리 방식에서 Combine으로 전환시 유용
+* 2가지 빌트인 타입
+  * **PaththoughSubject**
+    * Subscriber가 값을 요청하면, 그때 부터 받은 값을 전달
+    * 전달한 값을 들고 있지 않음
+  * CurrentValueSubject
+    * Subscriber가 값을 요청하면, 최근에 가지고 있던 값을 전달하고 그때 부터 받은 값을 전달
+    * 전달한 값을 들고 있음
+    * 최초 선언시 기본 값을 선언해주어야 함
+
+### @Published
+* **@Published** 로 선언된 프로퍼티를 퍼블리셔로 만들어줌
+* 클래스에 한해서 사용됨 (구조체 불가)
+* **$**를 이용해서 퍼블리셔에 접근할 수 있음
+
+```swift
+import Foundation
+import Combine
+
+// MARK: Published
+
+final class SomeViewModel {
+    @Published var name: String = "Jack"
+    var age: Int = 20
+}
+
+final class Label {
+    var text: String = ""
+}
+
+let label = Label()
+let vm = SomeViewModel()
+print("text: \(label.text)")
+// text:
+
+vm.$name.assign(to: \.text, on: label)
+print("text: \(label.text)")
+// text: Jack
+
+vm.name = "Jason"
+print("text: \(label.text)")
+// text: Jason
+```
+
+## Subscriber
+* Publisher 에게 데이터 요청을 하는 역할
+* Input, Failure 타입 정의 필요
+* Publisher를 구독 후, 갯수를 요청
+* 파이프라인 취소 가능
+* 빌트인 Subcriber인 **asign**, **sink**
+  * assign은 Publisher가 제공한 데이터를 특정 객체의 KeyPath에 할당
+  * sink는 Publisher가 제공한 데이터를 받을 수 있는 클로저를 제공
+
+## Subscription
+* Publihser와 Subscriber가 연결됨을 나타냄
+  * 즉, Publisher가 발행한 구독 티켓과 같음
+  * Subscription이 있으면, 데이터를 받을 수 있음
+  * Subscription이 사라지면, 구독 관계도 사라짐
+* **Cancellable** 프로토콜을 채택
+  * 즉, Subscription을 통해 연결을 Cancel 할 수 있음
+
+## Operator
+* Publisher에게 받은 값을 가공해서 Subscriber 에게 제공
+* Input, Output, Failure type을 받는 타입이 다를 수 있음
+* ex) map, filter, reduce, compactMap, collect, combineLatest ...
+
+## Scheduler
+* Scheduler는 언제, 어떻게 클로져를 실행할지 결정
+* Operator에서 Scheduler를 파라미터로 받는 경우가 있음
+  * 즉, 작업에 따라서 백그라운드 혹은 메인스레드에서 작업이 실행될 수 있게 도와줌
+* Scheduler가 스레드 자체는 X
+
+### 2가지 Scheduler 메서드
+* subscribe(on:)
+  * Publisher가 어느 스레드에서 수행할 지 결정
+  * 무거운 작업은 메인스레드가 아닌 다른스레드에서 작업할 수 있게 도와줌
+    * ex) 백그라운드 계산이 많이 필요할 때
+    * ex) 파일을 다운로드 하는 경우
+* receive(on:)
+  * Operator, Subscriber가 어느 스레드에서 수행할 지 결정해주는 것
+  * UI 업데이트 필요한 데이터를 메인스레드에서 받을 수 있게 도와줌
+    * ex) 서버에서 가져온 데이터를 UI 업데이트 할 때
