@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EE5E306F28BCAF2E00B732D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E306E28BCAF2E00B732D8 /* AppDelegate.swift */; };
 		EE5E307128BCAF2E00B732D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E307028BCAF2E00B732D8 /* SceneDelegate.swift */; };
-		EE5E307628BCAF2E00B732D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E307428BCAF2E00B732D8 /* Main.storyboard */; };
 		EE5E307828BCAF3100B732D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5E307728BCAF3100B732D8 /* Assets.xcassets */; };
 		EE5E307B28BCAF3100B732D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E307928BCAF3100B732D8 /* LaunchScreen.storyboard */; };
 		EE5E308728BCAF6F00B732D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E308328BCAF6F00B732D8 /* NetworkService.swift */; };
@@ -18,13 +17,13 @@
 		EE5E308B28BCAFB600B732D8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E308A28BCAFB600B732D8 /* SearchViewController.swift */; };
 		EE5E308E28BCB03E00B732D8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EE5E308D28BCB03E00B732D8 /* Kingfisher */; };
 		EE5E309128BCB04E00B732D8 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E309028BCB04E00B732D8 /* Publisher+Utils.swift */; };
+		EE5E309428BCB31200B732D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E309228BCB31200B732D8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE5E306B28BCAF2E00B732D8 /* GithubUserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5E306E28BCAF2E00B732D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5E307028BCAF2E00B732D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE5E307528BCAF2E00B732D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE5E307728BCAF3100B732D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE5E307A28BCAF3100B732D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE5E307C28BCAF3100B732D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		EE5E308628BCAF6F00B732D8 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EE5E308A28BCAFB600B732D8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EE5E309028BCB04E00B732D8 /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		EE5E309328BCB31200B732D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +68,9 @@
 			children = (
 				EE5E306E28BCAF2E00B732D8 /* AppDelegate.swift */,
 				EE5E307028BCAF2E00B732D8 /* SceneDelegate.swift */,
-				EE5E307428BCAF2E00B732D8 /* Main.storyboard */,
 				EE5E307728BCAF3100B732D8 /* Assets.xcassets */,
 				EE5E307928BCAF3100B732D8 /* LaunchScreen.storyboard */,
+				EE5E309228BCB31200B732D8 /* Main.storyboard */,
 				EE5E307C28BCAF3100B732D8 /* Info.plist */,
 				EE5E308528BCAF6F00B732D8 /* Model */,
 				EE5E308228BCAF6F00B732D8 /* Network */,
@@ -169,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E309428BCB31200B732D8 /* Main.storyboard in Resources */,
 				EE5E307B28BCAF3100B732D8 /* LaunchScreen.storyboard in Resources */,
 				EE5E307828BCAF3100B732D8 /* Assets.xcassets in Resources */,
-				EE5E307628BCAF2E00B732D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +195,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE5E307428BCAF2E00B732D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE5E307528BCAF2E00B732D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE5E307928BCAF3100B732D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE5E307A28BCAF3100B732D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE5E309228BCB31200B732D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE5E309328BCB31200B732D8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
