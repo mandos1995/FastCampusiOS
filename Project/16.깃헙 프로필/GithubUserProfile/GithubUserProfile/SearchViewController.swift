@@ -28,7 +28,7 @@ class UserProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        thumbnail.layer.cornerRadius = thumbnail.layer.borderWidth / 2
+        thumbnail.layer.cornerRadius = 80
         
     }
     
@@ -64,7 +64,7 @@ class UserProfileViewController: UIViewController {
         self.loginLabel.text = user.login
         self.followerLabel.text = "follower: \(user.followers)"
         self.followingLabel.text = "following: \(user.following)"
-        self.thumbnail.image = nil
+        self.thumbnail.kf.setImage(with: user.avatarUrl)
 
     }
 }
@@ -111,7 +111,12 @@ extension UserProfileViewController: UISearchBarDelegate {
             .decode(type: UserProfile.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
             .sink { completion in
-                print(completion)
+                print("completion: ", completion)
+                switch completion {
+                case .failure(let error):
+                    self.user = nil
+                case .finished: break
+                }
             } receiveValue: { user in
                 self.user = user
             }.store(in: &subscriptions)
