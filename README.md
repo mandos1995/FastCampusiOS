@@ -500,7 +500,7 @@ print("text: \(label.text)")
 * URLRequest를 생성하는 모델을 만들고, 그 모델을 활용하는 클래스를 만들어서 모듈화를 쉽게 하는 방법에 대해 이해하였음
 * 제네릭을 어떠할 때에 사용하면 좋을지 이해하였음
 
-## 앱 시연영상
+## 앱 시연 영상
 
 ![Oct-10-2022 17-25-01](https://user-images.githubusercontent.com/77199797/194825417-240975e5-3948-491e-b08f-389099096f06.gif)
 
@@ -509,3 +509,22 @@ print("text: \(label.text)")
 * URLSession
 * Combine
 
+# 17. 깃헙 사용자 검색
+## 핵심기능
+1. URLSessiong + Combine을 사용해 네트워크 통신 기능 구현
+2. 데이터가 바뀔 때, CollectionView에 뿌려주는 기능 구현
+
+## 회고
+* Combine의 Subscriber인 assign에 대해 잊고 있었는데.. 사용을 해봤음 (복습을 계속해서 해야겠다는 생각이 들었다..)
+* Combine의 Operator 중 replaceError를 처음 사용해보았음
+    * replaceError를 이용하여 에러 스트림이 전달 안되도록 처리를할 수 있음
+    * Error Handling이 필요한 경우 tryMap 을 사용하여 처리를 할 수 있음
+
+## 앱 시연 영상
+
+![Oct-10-2022 17-34-26](https://user-images.githubusercontent.com/77199797/194828434-5c3dc938-3671-4968-956d-e098e937a998.gif)
+
+## 사용기술
+* Swift
+* URLSession
+* Combine
