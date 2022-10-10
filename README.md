@@ -459,3 +459,35 @@ print("text: \(label.text)")
 * Swift
 * Storyboard
 * Combine
+
+# 15. Network In iOS
+## 핵심기능
+1. Network에 대한 이해
+2. URLSession에 대한 공부
+
+## 회고
+* 어느 스레드에서 작업을 해야할 지 이해를 하게 되었음.
+    * Main-Thread: UI관련 및 사용자 인터렉션을 받는 작업 수행
+        * 데이터 화면에 출력
+        * 버튼 클릭 이벤트 감지
+    * Backgroud: MainThread 외의 작업
+        * 네트워크에더 데이터를 다운 받는 경우
+    * Custom: 지정된 스레드를 통해서 작업하는 경우
+        * 카메라를 통해서 들어온 영상데이터 가공시
+        * 오디오 데이터 변조 등
+* URLSeesion에 대해 이해하였음
+    * URLSession
+        * URLSessionConfiguration
+            * .default
+                * 기본 구성 체계
+            * .ephemeral
+                * 캐시, 쿠키, 인증서 등 정보들을 저장하지 않음
+            * .background
+                * http, https 업로드 또는 다운로드가 백그라운드에서 수행되도록 허용
+        * URLSession
+            * URLConfiguration을 보고 세션을 생성함
+
+## 사용기술
+* Swift
+* URLSession
+* Combine
