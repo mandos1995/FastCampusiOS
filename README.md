@@ -491,3 +491,21 @@ print("text: \(label.text)")
 * Swift
 * URLSession
 * Combine
+
+# 16. 깃헙 프로필
+## 핵심기능
+1. URLSession + Combine을 사용해 네트워크 통신 기능 구현
+
+## 회고
+* URLRequest를 생성하는 모델을 만들고, 그 모델을 활용하는 클래스를 만들어서 모듈화를 쉽게 하는 방법에 대해 이해하였음
+* 제네릭을 어떠할 때에 사용하면 좋을지 이해하였음
+
+## 앱 시연영상
+
+![Oct-10-2022 17-25-01](https://user-images.githubusercontent.com/77199797/194825417-240975e5-3948-491e-b08f-389099096f06.gif)
+
+## 사용기술
+* Swift
+* URLSession
+* Combine
+
