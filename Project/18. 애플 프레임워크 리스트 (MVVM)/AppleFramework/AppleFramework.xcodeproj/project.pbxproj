@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE136BDB2921381D008CF100 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE136BDA2921381D008CF100 /* FrameworkListViewModel.swift */; };
+		EE136BDD29213828008CF100 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE136BDC29213828008CF100 /* FrameworkDetailViewModel.swift */; };
 		EE203EA728581AC400E7C24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EA628581AC400E7C24A /* AppDelegate.swift */; };
 		EE203EA928581AC400E7C24A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE203EA828581AC400E7C24A /* SceneDelegate.swift */; };
 		EE203EAE28581AC400E7C24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE203EAC28581AC400E7C24A /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE136BDA2921381D008CF100 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		EE136BDC29213828008CF100 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		EE203EA328581AC400E7C24A /* AppleFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE203EA628581AC400E7C24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE203EA828581AC400E7C24A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE136BD7292137CD008CF100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE203EBA28581B2100E7C24A /* FrameworkData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE136BD8292137DD008CF100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE203EA628581AC400E7C24A /* AppDelegate.swift */,
+				EE203EA828581AC400E7C24A /* SceneDelegate.swift */,
+				EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */,
+				EE203EBE28581D8100E7C24A /* FrameworkCell.swift */,
+				EE29F8E0287579A3000A1DF1 /* FrameworkDetailViewController.swift */,
+				EE203EAC28581AC400E7C24A /* Main.storyboard */,
+				EE29F8DE2875798E000A1DF1 /* Detail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE136BD92921380C008CF100 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE136BDA2921381D008CF100 /* FrameworkListViewModel.swift */,
+				EE136BDC29213828008CF100 /* FrameworkDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EE203E9A28581AC400E7C24A = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +99,12 @@
 		EE203EA528581AC400E7C24A /* AppleFramework */ = {
 			isa = PBXGroup;
 			children = (
-				EE203EBC28581B7000E7C24A /* FrameworkListViewController.swift */,
-				EE203EBA28581B2100E7C24A /* FrameworkData.swift */,
-				EE203EA628581AC400E7C24A /* AppDelegate.swift */,
-				EE203EA828581AC400E7C24A /* SceneDelegate.swift */,
-				EE203EBE28581D8100E7C24A /* FrameworkCell.swift */,
-				EE203EAC28581AC400E7C24A /* Main.storyboard */,
-				EE29F8DE2875798E000A1DF1 /* Detail.storyboard */,
+				EE136BD92921380C008CF100 /* ViewModel */,
+				EE136BD7292137CD008CF100 /* Model */,
+				EE136BD8292137DD008CF100 /* View */,
 				EE203EAF28581AC600E7C24A /* Assets.xcassets */,
 				EE203EB128581AC600E7C24A /* LaunchScreen.storyboard */,
 				EE203EB428581AC600E7C24A /* Info.plist */,
-				EE29F8E0287579A3000A1DF1 /* FrameworkDetailViewController.swift */,
 			);
 			path = AppleFramework;
 			sourceTree = "<group>";
@@ -153,9 +183,11 @@
 			files = (
 				EE203EA728581AC400E7C24A /* AppDelegate.swift in Sources */,
 				EE203EBB28581B2100E7C24A /* FrameworkData.swift in Sources */,
+				EE136BDB2921381D008CF100 /* FrameworkListViewModel.swift in Sources */,
 				EE203EA928581AC400E7C24A /* SceneDelegate.swift in Sources */,
 				EE203EBF28581D8100E7C24A /* FrameworkCell.swift in Sources */,
 				EE29F8E1287579A3000A1DF1 /* FrameworkDetailViewController.swift in Sources */,
+				EE136BDD29213828008CF100 /* FrameworkDetailViewModel.swift in Sources */,
 				EE203EBD28581B7000E7C24A /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
