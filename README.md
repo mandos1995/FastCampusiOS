@@ -544,3 +544,17 @@ print("text: \(label.text)")
 * Swift
 * Combine
 * MVVM
+
+# 19. 깃헙 프로필 (MVVM)
+## 핵심기능
+1. MVC -> MVVM 리팩토링
+
+## 회고
+* MVVM에 대해 좀 더 자세히 알 수 있었다.
+  * 데이터를 가공하거나 네트워크 요청 관련 로직도 전부 ViewModel이 담당하는 것이 알맞는 구조라고 생각을 함
+  * ViewController는 View에 관한 부분만 처리하자..!
+
+## 사용기술
+* Swift
+* Combine
+* MVVM
