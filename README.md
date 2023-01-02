@@ -528,3 +528,19 @@ print("text: \(label.text)")
 * Swift
 * URLSession
 * Combine
+
+# 18. 애플 프레임워크 리스트 (MVVM)
+## 핵심기능
+1. MVC -> MVVM 리팩토링
+
+## 회고
+* MVVM을 적용하는 방법에 대해 알게 되었음
+  * ViewController, ViewModel의 역할 분리에 대해 알게 됨
+  * 기존 MVC 구조는 ViewController가 너무 많은 책임을 지고 있음
+  * ViewModel을 만들어서 비즈니스 로직들을 ViewModel이 하도록 구현해야겠음
+* MVVM을 적용하면서 ViewController의 코드가 간결해졌고, 비즈니스 로직을 ViewModel이 담당하기 때문에 테스트하기에도 더 쉬울 것이라고 느꼈고, 따로 분리를 했기 때문에 유지보수가 쉬울 것이라고 느꼈음
+
+## 사용기술
+* Swift
+* Combine
+* MVVM
