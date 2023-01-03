@@ -10,9 +10,6 @@ import Combine
 
 class SearchViewController: UIViewController {
     
-    @Published private(set) var users: [SearchResult] = []
-    var subscriptions = Set<AnyCancellable>()
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     enum Section {
@@ -20,10 +17,13 @@ class SearchViewController: UIViewController {
     }
     typealias Item = SearchResult
     
+    var subscriptions = Set<AnyCancellable>()
     var datasource: UICollectionViewDiffableDataSource<Section, Item>!
+    var viewModel: SearchViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = SearchViewModel(network: .init(configuration: .default))
         embedSearchControl()
         configureCollectionView()
         bind()
@@ -61,7 +61,7 @@ class SearchViewController: UIViewController {
     }
     
     private func bind() {
-        $users
+        viewModel.users
             .receive(on: RunLoop.main)
             .sink { users in
                 var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
@@ -81,23 +81,7 @@ extension SearchViewController: UISearchResultsUpdating {
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("button clicked: ", searchBar.text)
-        
         guard let keyword = searchBar.text, !keyword.isEmpty else { return }
-
-        var resource = Resource<SearchUserResponse>(
-            base: "https://api.github.com/",
-            path: "search/users",
-            params: ["q": keyword],
-            header: ["Content-Type": "application/json"])
-        
-        var network = NetworkService(configuration: .default)
-        
-        network.load(resource)
-            .map { $0.items }
-            .receive(on: RunLoop.main)
-            .replaceError(with: [])
-            .assign(to: \.users, on: self)
-            .store(in: &subscriptions)
+        viewModel.search(keyword: keyword)
     }
 }
