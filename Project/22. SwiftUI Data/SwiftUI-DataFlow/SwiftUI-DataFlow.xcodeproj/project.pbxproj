@@ -13,6 +13,8 @@
 		EEC97DE6299C9BBD00ADBCB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC97DE5299C9BBD00ADBCB8 /* Preview Assets.xcassets */; };
 		EEC97DED299C9BEE00ADBCB8 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC97DEC299C9BEE00ADBCB8 /* Episode.swift */; };
 		EEC97DEF299C9C6100ADBCB8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC97DEE299C9C6100ADBCB8 /* PlayerView.swift */; };
+		EEC97DF1299C9F9A00ADBCB8 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC97DF0299C9F9A00ADBCB8 /* PlayButton.swift */; };
+		EEC97DF3299C9FD800ADBCB8 /* PlayingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC97DF2299C9FD800ADBCB8 /* PlayingStatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		EEC97DE5299C9BBD00ADBCB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEC97DEC299C9BEE00ADBCB8 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		EEC97DEE299C9C6100ADBCB8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		EEC97DF0299C9F9A00ADBCB8 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		EEC97DF2299C9FD800ADBCB8 /* PlayingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingStatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 		EEC97DDD299C9BBB00ADBCB8 /* SwiftUI-DataFlow */ = {
 			isa = PBXGroup;
 			children = (
+				EEC97DF2299C9FD800ADBCB8 /* PlayingStatusView.swift */,
+				EEC97DF0299C9F9A00ADBCB8 /* PlayButton.swift */,
 				EEC97DDE299C9BBB00ADBCB8 /* SwiftUI_DataFlowApp.swift */,
 				EEC97DE0299C9BBB00ADBCB8 /* ContentView.swift */,
 				EEC97DE2299C9BBD00ADBCB8 /* Assets.xcassets */,
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC97DE1299C9BBB00ADBCB8 /* ContentView.swift in Sources */,
+				EEC97DF1299C9F9A00ADBCB8 /* PlayButton.swift in Sources */,
 				EEC97DED299C9BEE00ADBCB8 /* Episode.swift in Sources */,
+				EEC97DF3299C9FD800ADBCB8 /* PlayingStatusView.swift in Sources */,
 				EEC97DDF299C9BBB00ADBCB8 /* SwiftUI_DataFlowApp.swift in Sources */,
 				EEC97DEF299C9C6100ADBCB8 /* PlayerView.swift in Sources */,
 			);
