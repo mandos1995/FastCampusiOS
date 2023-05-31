@@ -8,30 +8,34 @@
 import SwiftUI
 
 struct StockRankRow: View {
+    var stock: StockModel
+    
     var body: some View {
         HStack {
-            Text("1")
+            Text("\(stock.rank)")
                 .font(.system(size: 16, weight: .bold))
                 .frame(width: 30)
                 .foregroundColor(.blue)
             
-            Image("TSLA")
+            Image("\(stock.imageName)")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             
             VStack(alignment: .leading, spacing: 5) {
-                Text("TSLA")
+                Text("\(stock.imageName)")
                     .font(.system(size: 12))
-                    
+                    .foregroundColor(.white)
                 HStack {
-                    Text("1,000,000 원")
+                    Text("\(stock.price) 원")
                         .font(.system(size: 12))
-                    Text("+0.4%")
-                        .foregroundColor(.red)
+                        .foregroundColor(.gray)
+                    Text("\(stock.diff * 100, specifier: "%.2f") %")
+                        .foregroundColor(stock.diff > 0 ? .red : .blue)
+                        .font(.system(size: 12))
                 }
             }
-            .foregroundColor(.white)
+            
             
             Spacer()
             
@@ -43,7 +47,7 @@ struct StockRankRow: View {
                 .foregroundColor(.gray)
         }
         .padding()
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.black)
         
     }
@@ -51,6 +55,6 @@ struct StockRankRow: View {
 
 struct StockRankRow_Previews: PreviewProvider {
     static var previews: some View {
-        StockRankRow()
+        StockRankRow(stock: StockModel.list.first!)
     }
 }
