@@ -9,41 +9,62 @@ import SwiftUI
 
 struct SymbolRollerView: View {
     
-    let symbols: [String] = ["sun.min", "moon", "cloud", "wind", "snowflake"]
-    
     @State private var imageName: String = "moon"
     
     var body: some View {
         VStack {
-            Image(systemName: imageName)
-                .renderingMode(.template)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding()
-            
-            Text(imageName)
-                .font(.system(size: 40, weight: .bold))
-            
-            Button {
-                print("button tapped")
-            } label: {
-                HStack {
-                    Image(systemName: "arrow.3.trianglepath")
-                    VStack {
-                        Text("Reload")
-                            .font(.system(size: 30, weight: .bold))
-                        Text("click me to reload")
-                    }
+            Spacer()
+            WeatherImage(imageName: $imageName)
+            Spacer()
+            WeatherText(title: $imageName)
+            ReloadButton(imageName: $imageName)
+        }
+    }
+}
+
+struct WeatherImage: View {
+    @Binding var imageName: String
+    
+    var body: some View {
+        Image(systemName: imageName)
+            .renderingMode(.template)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding()
+    }
+}
+
+struct WeatherText: View {
+    @Binding var title: String
+    
+    var body: some View {
+        Text(title)
+            .font(.system(size: 40, weight: .bold))
+    }
+}
+
+struct ReloadButton: View {
+    let symbols: [String] = ["sun.min", "moon", "cloud", "wind", "snowflake"]
+    @Binding var imageName: String
+    
+    var body: some View {
+        Button {
+            print("button tapped")
+            imageName = symbols.randomElement()!
+        } label: {
+            HStack {
+                Image(systemName: "arrow.3.trianglepath")
+                VStack {
+                    Text("Reload")
+                        .font(.system(size: 30, weight: .bold))
+                    Text("click me to reload")
                 }
             }
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity, minHeight: 80)
-            .background(.pink)
-            .cornerRadius(40)
-            
-            
-
         }
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity, minHeight: 80)
+        .background(.pink)
+        .clipShape(Capsule())
     }
 }
 
