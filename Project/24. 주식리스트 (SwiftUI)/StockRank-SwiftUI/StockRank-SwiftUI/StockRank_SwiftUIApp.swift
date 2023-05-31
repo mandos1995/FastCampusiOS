@@ -11,7 +11,7 @@ import SwiftUI
 struct StockRank_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StockRankView()
         }
     }
 }
