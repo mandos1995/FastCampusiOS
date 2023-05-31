@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EE743DBC2A270F8D008F8B17 /* SymbolRoller_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE743DBB2A270F8D008F8B17 /* SymbolRoller_SwiftUIApp.swift */; };
-		EE743DBE2A270F8D008F8B17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE743DBD2A270F8D008F8B17 /* ContentView.swift */; };
 		EE743DC02A270F91008F8B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE743DBF2A270F91008F8B17 /* Assets.xcassets */; };
 		EE743DC32A270F91008F8B17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE743DC22A270F91008F8B17 /* Preview Assets.xcassets */; };
+		EE743DCA2A27107B008F8B17 /* SymbolRollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE743DC92A27107B008F8B17 /* SymbolRollerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE743DB82A270F8D008F8B17 /* SymbolRoller-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SymbolRoller-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE743DBB2A270F8D008F8B17 /* SymbolRoller_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRoller_SwiftUIApp.swift; sourceTree = "<group>"; };
-		EE743DBD2A270F8D008F8B17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE743DBF2A270F91008F8B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE743DC22A270F91008F8B17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE743DC92A27107B008F8B17 /* SymbolRollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRollerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				EE743DBB2A270F8D008F8B17 /* SymbolRoller_SwiftUIApp.swift */,
-				EE743DBD2A270F8D008F8B17 /* ContentView.swift */,
 				EE743DBF2A270F91008F8B17 /* Assets.xcassets */,
 				EE743DC12A270F91008F8B17 /* Preview Content */,
+				EE743DC92A27107B008F8B17 /* SymbolRollerView.swift */,
 			);
 			path = "SymbolRoller-SwiftUI";
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE743DBE2A270F8D008F8B17 /* ContentView.swift in Sources */,
+				EE743DCA2A27107B008F8B17 /* SymbolRollerView.swift in Sources */,
 				EE743DBC2A270F8D008F8B17 /* SymbolRoller_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
