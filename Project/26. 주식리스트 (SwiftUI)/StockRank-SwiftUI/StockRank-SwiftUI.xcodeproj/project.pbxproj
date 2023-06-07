@@ -13,6 +13,7 @@
 		EEF658822A3084D60053B80A /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF658812A3084D40053B80A /* StockModel.swift */; };
 		EEF658842A3084FF0053B80A /* StockRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF658832A3084FF0053B80A /* StockRankView.swift */; };
 		EEF658862A3085250053B80A /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF658852A3085250053B80A /* StockRankRow.swift */; };
+		EEF658882A30C14B0053B80A /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF658872A30C14B0053B80A /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EEF658812A3084D40053B80A /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		EEF658832A3084FF0053B80A /* StockRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankView.swift; sourceTree = "<group>"; };
 		EEF658852A3085250053B80A /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
+		EEF658872A30C14B0053B80A /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EEF658812A3084D40053B80A /* StockModel.swift */,
 				EEF658832A3084FF0053B80A /* StockRankView.swift */,
 				EEF658852A3085250053B80A /* StockRankRow.swift */,
+				EEF658872A30C14B0053B80A /* StockDetailView.swift */,
 				EEF658772A3084B00053B80A /* Assets.xcassets */,
 				EEF658792A3084B00053B80A /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF658742A3084AD0053B80A /* StockRank_SwiftUIApp.swift in Sources */,
+				EEF658882A30C14B0053B80A /* StockDetailView.swift in Sources */,
 				EEF658862A3085250053B80A /* StockRankRow.swift in Sources */,
 				EEF658842A3084FF0053B80A /* StockRankView.swift in Sources */,
 				EEF658822A3084D60053B80A /* StockModel.swift in Sources */,
