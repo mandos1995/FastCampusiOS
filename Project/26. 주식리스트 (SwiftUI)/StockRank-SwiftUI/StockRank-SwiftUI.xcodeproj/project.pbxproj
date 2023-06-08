@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE59C5192A31BDE900DB3F0D /* StockRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59C5182A31BDE900DB3F0D /* StockRankViewModel.swift */; };
 		EEF658742A3084AD0053B80A /* StockRank_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF658732A3084AD0053B80A /* StockRank_SwiftUIApp.swift */; };
 		EEF658782A3084B00053B80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF658772A3084B00053B80A /* Assets.xcassets */; };
 		EEF6587B2A3084B00053B80A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF6587A2A3084B00053B80A /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE59C5182A31BDE900DB3F0D /* StockRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewModel.swift; sourceTree = "<group>"; };
 		EEF658702A3084AD0053B80A /* StockRank-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StockRank-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF658732A3084AD0053B80A /* StockRank_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIApp.swift; sourceTree = "<group>"; };
 		EEF658772A3084B00053B80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				EEF658732A3084AD0053B80A /* StockRank_SwiftUIApp.swift */,
 				EEF658812A3084D40053B80A /* StockModel.swift */,
 				EEF658832A3084FF0053B80A /* StockRankView.swift */,
+				EE59C5182A31BDE900DB3F0D /* StockRankViewModel.swift */,
 				EEF658852A3085250053B80A /* StockRankRow.swift */,
 				EEF658872A30C14B0053B80A /* StockDetailView.swift */,
 				EEF658772A3084B00053B80A /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				EEF658862A3085250053B80A /* StockRankRow.swift in Sources */,
 				EEF658842A3084FF0053B80A /* StockRankView.swift in Sources */,
 				EEF658822A3084D60053B80A /* StockModel.swift in Sources */,
+				EE59C5192A31BDE900DB3F0D /* StockRankViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
