@@ -12,19 +12,31 @@ struct FrameworkDetailView: View {
     @StateObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
+            Spacer()
+            
             Image(viewModel.framework.imageName)
+                .resizable()
+                .frame(width: 90, height: 90)
             Text(viewModel.framework.name)
+                .font(.system(size: 24, weight: .bold))
             Text(viewModel.framework.description)
+                .font(.system(size: 16, weight: .regular))
+            
+            Spacer()
             
             Button {
                 print("--> Tapped")
             } label: {
                 Text("Learn More")
-                
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundColor(.white)
             }
-            
+            .frame(maxWidth: .infinity, minHeight: 80)
+            .background(.pink)
+            .cornerRadius(40)
         }
+        .padding(.horizontal, 30)
     }
 }
 
