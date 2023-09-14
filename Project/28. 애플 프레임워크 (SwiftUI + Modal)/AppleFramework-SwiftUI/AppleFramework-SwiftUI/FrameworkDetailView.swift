@@ -9,25 +9,21 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    @Binding var framework: AppleFramework?
+    @StateObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
         VStack {
-            if let framework {
-                Image(framework.imageName)
-                Text(framework.name)
-                Text(framework.description)
-            } else {
-                Text("Noting selected")
-            }
+            Image(viewModel.framework.imageName)
+            Text(viewModel.framework.name)
+            Text(viewModel.framework.description)
             
             Button {
                 print("--> Tapped")
             } label: {
                 Text("Learn More")
-                    
+                
             }
-
+            
         }
     }
 }

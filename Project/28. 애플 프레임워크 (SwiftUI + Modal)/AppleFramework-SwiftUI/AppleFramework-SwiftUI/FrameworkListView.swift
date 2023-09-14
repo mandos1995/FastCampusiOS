@@ -34,7 +34,8 @@ struct FrameworkListView: View {
             .navigationTitle("☀️ Apple Framework")
         }
         .sheet(isPresented: $vm.isShowingDetail) {
-            FrameworkDetailView(framework: $vm.selectedItem)
+            let vm = FrameworkDetailViewModel(framework: vm.selectedItem!)
+            FrameworkDetailView(viewModel: vm)
         }
     }
 }

@@ -16,6 +16,7 @@
 		EED3E8642AB2D328003A3949 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8632AB2D328003A3949 /* SafariView.swift */; };
 		EED3E8662AB2D390003A3949 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */; };
 		EED3E8682AB2D460003A3949 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */; };
+		EED3E86A2AB2DFBA003A3949 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8692AB2DFBA003A3949 /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EED3E8632AB2D328003A3949 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		EED3E8692AB2DFBA003A3949 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				EED3E8632AB2D328003A3949 /* SafariView.swift */,
 				EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */,
 				EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */,
+				EED3E8692AB2DFBA003A3949 /* FrameworkDetailViewModel.swift */,
 				EE5856AF2A287AE100F1C0A7 /* Assets.xcassets */,
 				EE5856B12A287AE100F1C0A7 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				EED3E8662AB2D390003A3949 /* FrameworkDetailView.swift in Sources */,
 				EE5856AC2A287ADD00F1C0A7 /* AppleFramework_SwiftUIApp.swift in Sources */,
 				EE5856BA2A287B2000F1C0A7 /* FrameworkData.swift in Sources */,
+				EED3E86A2AB2DFBA003A3949 /* FrameworkDetailViewModel.swift in Sources */,
 				EED3E8642AB2D328003A3949 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
