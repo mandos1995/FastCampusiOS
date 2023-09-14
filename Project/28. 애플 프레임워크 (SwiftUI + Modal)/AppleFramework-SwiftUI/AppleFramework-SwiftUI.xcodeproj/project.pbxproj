@@ -14,6 +14,8 @@
 		EE5856BA2A287B2000F1C0A7 /* FrameworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5856B92A287B2000F1C0A7 /* FrameworkData.swift */; };
 		EE5856BC2A287D2700F1C0A7 /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5856BB2A287D2700F1C0A7 /* FrameworkCell.swift */; };
 		EED3E8642AB2D328003A3949 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8632AB2D328003A3949 /* SafariView.swift */; };
+		EED3E8662AB2D390003A3949 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */; };
+		EED3E8682AB2D460003A3949 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		EE5856B92A287B2000F1C0A7 /* FrameworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkData.swift; sourceTree = "<group>"; };
 		EE5856BB2A287D2700F1C0A7 /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		EED3E8632AB2D328003A3949 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				EE5856BB2A287D2700F1C0A7 /* FrameworkCell.swift */,
 				EE5856B92A287B2000F1C0A7 /* FrameworkData.swift */,
 				EED3E8632AB2D328003A3949 /* SafariView.swift */,
+				EED3E8672AB2D460003A3949 /* FrameworkListViewModel.swift */,
+				EED3E8652AB2D390003A3949 /* FrameworkDetailView.swift */,
 				EE5856AF2A287AE100F1C0A7 /* Assets.xcassets */,
 				EE5856B12A287AE100F1C0A7 /* Preview Content */,
 			);
@@ -148,6 +154,8 @@
 			files = (
 				EE5856BC2A287D2700F1C0A7 /* FrameworkCell.swift in Sources */,
 				EE5856AE2A287ADD00F1C0A7 /* FrameworkListView.swift in Sources */,
+				EED3E8682AB2D460003A3949 /* FrameworkListViewModel.swift in Sources */,
+				EED3E8662AB2D390003A3949 /* FrameworkDetailView.swift in Sources */,
 				EE5856AC2A287ADD00F1C0A7 /* AppleFramework_SwiftUIApp.swift in Sources */,
 				EE5856BA2A287B2000F1C0A7 /* FrameworkData.swift in Sources */,
 				EED3E8642AB2D328003A3949 /* SafariView.swift in Sources */,

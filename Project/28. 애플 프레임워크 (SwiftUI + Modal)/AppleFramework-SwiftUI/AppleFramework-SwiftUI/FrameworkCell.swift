@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FrameworkCell: View {
     
-    var framework: AppleFramework
+    @Binding var framework: AppleFramework
     
     var body: some View {
         VStack {
@@ -24,9 +24,3 @@ struct FrameworkCell: View {
     }
 }
 
-struct FrameworkCell_Previews: PreviewProvider {
-    static var previews: some View {
-        FrameworkCell(framework: AppleFramework.list.first!)
-            .previewLayout(.fixed(width: 160, height: 250))
-    }
-}
